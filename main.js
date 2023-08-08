@@ -31,7 +31,11 @@ function my_keydown(e)
 	console.log(keyPressed);
 	
 		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
-		//write a code to check the type of key pressed
+	      {
+			alphabetkey();
+			document.getElementById("d1").innerHTML="You pressed Alphabet Key";
+			console.log("alphabet key");
+		  }
 	else{
 		otherkey();
 		document.getElementById("d1").innerHTML="You pressed symbol or other key";
@@ -40,9 +44,9 @@ function my_keydown(e)
 
 function alphabetkey()
 {
-	//upload respective image with the message. 
+	 
      img_image="Alpkey.png";
-	 add();
+ add();
 }
 function numberkey()
 {
